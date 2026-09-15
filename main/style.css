@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #f8ff9b; 
+    --primary-hover: #0c6f7e;
+    --secondary-color: #f8f7a6;
+    --background-color: #242323;
+    --text-color: #6b6b6b;
+    --success-color: #16a34a;
+    --danger-color: #d92626;
+    --disabled-color: #cbd8db;
+    --navbar-background-color: hsl(221 14% 9% / 1);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+h1, h2, h3, .title {
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--secondary-color);
+}
+.button.is-link {
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+.button.is-link:hover {
+    background-color: var(--primary-hover);
+}
+.box {
+    border: 4px solid var(--primary-color);
+    background-color: #242323;
+}
+.table {
+    border: 4px solid var(--primary-color);
+}
+.navbar {
+    border-bottom: 4px solid var(--primary-color);
+    background-color: #242323;
+
+}
+.tag.is-info.mr-3 { /* meni barvu textu levelu opravneni */      
+    color: black; 
+} 
+.table .tr {
+    background-color: #242323;
+}
+.box a {
+    color: black;
+}
+.input {
+    background-color: #b4b4b4;
+    border: 0px;
+}
+.input:hover {
+    color: #e1f4fd;
+}
+.notification.is-success {
+    background-color: var(--success-color);
+    color: #ffffff;
+}
+.notification.is-danger {
+    background-color: var(--danger-color);
+    color: #ffffff;
+}
+.tag.is-info {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+.carousel-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.carousel-box {
+    flex: 1;
+    animation: carouselFade 0.3s ease;
+}
+@keyframes carouselFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.carousel-arrow {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    min-width: 2.75rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.carousel-arrow:hover {
+    background-color: var(--primary-hover);
+}
+.carousel-arrow-disabled {
+    background-color: var(--disabled-color);
+    cursor: default;
+    color: #ffffff;
+}
+.carousel-date {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.table.is-fullwidth.is-striped td {
+    background-color: #bdbdbd;
+}
+.table.is-fullwidth.is-striped td:hover {
+    color: #e1f4fd;
+}
+.table.is-fullwidth.is-striped th {
+    background-color: #f5f4ce;
+}
+.textarea {
+    background-color: #bdbdbd;
+}
+.textarea:hover {
+    color: #e1f4fd;
+}
